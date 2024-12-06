@@ -1,0 +1,159 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  margin: 0;
+}
+/* FOUNDATION */
+.top {
+  height: calc(100% / 3);
+  width: 100%;
+  display: flex;
+}
+.bottom {
+  height: 100%;
+  width: calc(100% / 7);
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1c1c;
+  opacity: 0.95;
+}
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Don't cover the entire screen */
+.modal-body {
+  width: 80%;
+  height: 70%;
+  background-color: black;
+  opacity: 1;
+  margin: 0;
+}
+.clickable {
+  filter: brightness(95%) drop-shadow(2px 4px 2px);
+}
+.dif {
+  position: absolute;
+  font-size: 2rem;
+}
+.clickable:hover {
+  cursor: pointer;
+  filter: brightness(100%) drop-shadow(0.3px 0.7px 2px);
+}
+
+.clickable:active {
+  filter: drop-shadow(0px 2px 1px);
+  transform: scale(0.98);
+}
+.clickjelly {
+  filter: brightness(95%) drop-shadow(0px 0px 0px);
+}
+.clickjelly:hover {
+  cursor: pointer;
+  filter: brightness(100%) drop-shadow(0.3px 0.7px 2px);
+}
+.clickjelly:active {
+  filter: drop-shadow(0px 2px 1px);
+  transform: scale(0.98);
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hidecop {
+  display: none;
+}
+/* these classes specify color */
+.darkpurple {
+  background-color: #4c008a;
+}
+.purple {
+  background-color: #646464;
+}
+.blue {
+  background-color: #0044ff;
+}
+.black {
+  background-color: #000000;
+  color: white;
+}
+.grey {
+  background-color: #a7a5a5;
+}
+.green {
+  background-color: #00ff4c;
+}
+.yellow {
+  background-color: #ffff00;
+}
+.red {
+  background-color: #ff0000;
+}
+grey {
+  background-color: #505050;
+}
+
+/* styles if the screen is 600px or less */
+
+@media only screen and (max-width: 300px) {
+  /* FOUNDATION */
+  .top {
+    display: block;
+  }
+
+  .pair {
+    height: 50%;
+    width: 100%;
+  }
+  /* CHECKERBOARD */
+}
+#instructionsbutton {
+  background: red;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.coprun {
+  position: absolute;
+  left: 35%;
+  top: 10%;
+  z-index: 99;
+  height: 80%;
+}

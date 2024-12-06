@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  
+    <script defer src="/Script.js"></script>
+  </head>
+  <body>
+    <img src="Images/cop.gif" id="copie" class="coprun hidecop" />
+    <div class="top orange">
+      <div class="bottom grey center-content">
+<p> 
+  
+<button   onclick="showModal()" id="instructionsbutton">Instructions</button>
+
+  Q1 "Fridays bring joy, or so it’s been claimed,
+  But in October, they might leave you blamed.
+  There’s one fateful day, when shadows conspire,
+  When luck takes a tumble, and fears may inspire! Choose a date."
+  
+  </p>
+      </div>
+      <div class="bottom brown center-content">
+        
+        <img class=" grey center-content clickable"src="Images/tre.png"
+        onclick="changePicture1()"
+        id="c1" />
+      </div>
+      <div class="bottom red center-content clickable">
+        <p class="dif">1</p>
+        <img class="center-content" src="Images/one.png" 
+        onclick="remove1()"
+        id="first" />
+     
+      </div>
+      <div class="bottom red center-content clickable">
+        <p class="dif">2</p>
+        <img class="center-content"src="Images/two.png " 
+        onclick="remove2()"
+        id="second"/>
+      </div>
+      <div class="bottom red center-content clickable">
+        <p class="dif">3</p>
+        <img class="center-content"src="./Images/one.png "
+         onclick="remove3()"
+        id="third" /> 
+      </div>
+      <div class="bottom red center-content clickable">
+        <p class="dif">4</p>
+        <img class="center-content"src="./Images/two.png " 
+        onclick="remove4()"
+        id="fourth" />
+        
+      </div>
+      <div class="bottom green center-content clickable">
+        <p class="dif">5</p>
+        <img class="center-content"src="./Images/one.png"  
+        onclick="remove5()"
+        id="fifth"
+         />
+      </div>
+    </div>
+    <div class="top orange ">
+      <div class="bottom dark purple center-content clickable">
+        <p>Q2 "I asked a German man if he could give me the time, I could tell he didn't like foreigners. He responded with no. What number did he appear to say"
+
+          </p> 
+      </div>
+      <div class="bottom purple center-content clickable">
+        <img class="center-content"src="./Images/tre.png"  
+        onclick="changePicture2()"
+        id="c2"/>
+      </div>
+      <div class="bottom red center-content clickable">
+        <p class="dif">6</p>
+        <img class="center-content"src="./Images/one.png" 
+        onclick="remove6()"
+        id="sixth"/>
+      </div>
+      <div class="bottom red center-content clickable">
+        <p class="dif">7</p>
+        <img class="center-content"src="./Images/two.png"
+        onclick="remove7()"
+        id="seventh" />
+      </div>
+      <div class="bottom red center-content clickable">
+        <p class="dif">8</p>
+        <img class="center-content"src="./Images/one.png" 
+        onclick="remove8()"
+        
+        id="eigth" />
+      </div>
+      <div class="bottom green center-content clickable">
+        <p class="dif">9</p>
+        <img class="center-content"src="./Images/two.png"  
+        
+        onclick="remove9()"
+        
+        id="ninth" />
+      </div>
+      <div class="bottom red center-content clickable">
+        <p class="dif">10</p>
+        <img class="center-content"src="./Images/one.png" 
+        onclick="remove10()"
+        id="tenth"/>
+      </div>
+    </div>
+    <div class="top orange">
+      <div class="bottom black center-content">
+        <p> Q3"In a world of numbers, I stand alone,
+          An odd little fellow, not carved from stone.
+          With friends in a circle, five in a crew,
+          You’ll find me right here, where four meets six too.
+          Though not a high rank, I’m often in play,
+          Guess who I am, if you dare, don’t delay!"
+          </p>
+       </div>
+      <div class="bottom black center-content clickable"> 
+        <img  class="center-content"src="./Images/tre.png"  
+        onclick="changePicture3()"
+        id="c3"/>
+      </div>
+      <div class="bottom red center-content clickable">
+        <p class="dif">11</p>
+        <img class="center-content"src="./Images/one.png" 
+        onclick="remove11()"
+        id="eleventh"/>
+      </div>
+      <div class="bottom red center-content clickable">
+        <p class="dif">12</p>
+        <img class="center-content"src="./Images/two.png" 
+        onclick="remove12()"
+        id="twelth"/>
+      </div>
+      <div class="bottom green center-content clickable">
+        <p class="dif">13</p>
+        <img class="center-content"src="./Images/one.png" 
+        onclick="remove13()"
+        id="thirteenth"/>
+      </div>
+      <div class="bottom red center-content clickable">
+        <p class="dif">14</p>
+        <img class="center-content"src="./Images/two.png" 
+        onclick="remove14()"
+        id="fourteenth"/>
+      </div>
+      <div class="bottom red center-content clickable" >
+        <p class="dif">15</p>
+        <img class="center-content"src="./Images/one.png" 
+        onclick="remove15()"
+        id="fifteenth"/>
+      </div>
+    </div>
+    
+    <div class="modal center-content" id="myModal">
+      <span class="close" onclick="hideModal()">&times;</span>
+      <div class="modal-body center-content">
+        <img src="Images/mott2.png" onclick="nextEscapeRoomPage()" />
+      </div>
+    </div>
+
+
+
+    
+    <audio
+    src="sound/audio.wav"
+    id="reg"
+  ></audio>
+  <audio
+    src="sound/monkey.wav"
+    id="monk"
+  ></audio>
+  <audio
+    src="sound/Easy.wav"
+    id="eze"
+  ></audio>
+ </div>
+  </body>
+</html>
